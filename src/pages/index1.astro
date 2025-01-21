@@ -1,0 +1,18 @@
+---
+import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Counter from '../components/Counter';
+
+const breadcrumbs = [
+  { text: 'Home', href: '/' }
+];
+---
+
+<Layout>
+  <Breadcrumbs crumbs={breadcrumbs} />
+  <Welcome />
+  <div style="display: flex; justify-content: center; margin-top: 2rem;">
+    <Counter client:load />
+  </div>
+</Layout>
