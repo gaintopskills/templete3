@@ -1,0 +1,16 @@
+{
+  "name": "Astro Basics",
+  "short_name": "Astro",
+  "description": "Welcome to Astro Basics - A fast and optimized website",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}

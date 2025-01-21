@@ -1,0 +1,24 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const breadcrumbs = [
+  { text: 'Home', href: '/' },
+  { text: 'Products', href: '/products' },
+  { text: 'Special Offer' }
+];
+---
+
+<Layout>
+  <Breadcrumbs crumbs={breadcrumbs} />
+  <div class="content">
+    <h1>Special Offer</h1>
+    <p>This is a special offer page with custom breadcrumb navigation.</p>
+  </div>
+</Layout>
+
+<style>
+  .content {
+    padding: 2rem;
+  }
+</style>
